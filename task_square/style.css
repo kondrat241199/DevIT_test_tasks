@@ -1,0 +1,32 @@
+.square {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    animation:
+        rotate 4s linear infinite,
+        changeColor 4s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: orange;
+    }
+    100% {
+        background-color: green;
+    }
+}
